@@ -153,6 +153,7 @@ namespace CursoWindowsForms
             this.Controls.Add(this.Lbl_MascaraAtiva);
             this.Controls.Add(this.Lbl_Conteudo);
             this.Controls.Add(this.Msk_TextBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Mascara";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

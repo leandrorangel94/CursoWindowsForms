@@ -1,17 +1,17 @@
-﻿using System;
+﻿using CursoWindowsFormsBiblioteca;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace CursoWindowsForms
 {
-    public partial class Frm_ValidaCPF : Form
+    public partial class Frm_ValidaCPF_UC : UserControl
     {
-        public Frm_ValidaCPF()
+        public Frm_ValidaCPF_UC()
         {
             InitializeComponent();
         }
 
-       
         private void Btn_Reset_Click(object sender, EventArgs e)
         {
             Lbl_Resultado.Text = "";

@@ -1,10 +1,19 @@
-﻿using System.Windows.Forms;
+﻿using CursoWindowsFormsBiblioteca;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CursoWindowsForms
 {
-    public partial class Frm_ValidaCPF2 : Form
+    public partial class Frm_ValidaCPF2_UC : UserControl
     {
-        public Frm_ValidaCPF2()
+        public Frm_ValidaCPF2_UC()
         {
             InitializeComponent();
         }
@@ -26,16 +35,17 @@ namespace CursoWindowsForms
             {
                 MessageBox.Show("CPF não contém texto!", "Mensagem de Validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if(vConteudo.Length !=11){
+            else if(vConteudo.Length != 11)
+            {
                 MessageBox.Show("CPF não está completo!", "Mensagem de Validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                if(MessageBox.Show
-                ("Você deseja realmente validar o CPF?",
-                "Mensagem de Validação",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question) == DialogResult.Yes)
+                Frm_Questao Db = new Frm_Questao("Frm_ValidaCPF2", "Tem certeza em validar o CPF?");
+                Db.ShowDialog();
+                //("Você deseja realmente validar o CPF?", "Mensagem de Validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+
+                if(Db.DialogResult == DialogResult.Yes)
                 {
                     bool validaCPF = false;
                     validaCPF = Cls_Uteis.Valida(Msk_CPF.Text);
@@ -50,7 +60,7 @@ namespace CursoWindowsForms
                 }
             }
 
-            
+
 
         }
     }

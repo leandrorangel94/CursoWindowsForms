@@ -1,14 +1,14 @@
 ﻿
 namespace CursoWindowsForms
 {
-    partial class Frm_DemonstracaoKey
+    partial class Frm_DemonstracaoKey_UC
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,15 +21,14 @@ namespace CursoWindowsForms
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DemonstracaoKey));
             this.Txt_Input = new System.Windows.Forms.TextBox();
             this.Txt_Msg = new System.Windows.Forms.TextBox();
             this.Btn_Reset = new System.Windows.Forms.Button();
@@ -49,6 +48,9 @@ namespace CursoWindowsForms
             // 
             // Txt_Msg
             // 
+            this.Txt_Msg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Txt_Msg.Location = new System.Drawing.Point(8, 40);
             this.Txt_Msg.Multiline = true;
             this.Txt_Msg.Name = "Txt_Msg";
@@ -59,6 +61,7 @@ namespace CursoWindowsForms
             // 
             // Btn_Reset
             // 
+            this.Btn_Reset.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Btn_Reset.Location = new System.Drawing.Point(328, 8);
             this.Btn_Reset.Name = "Btn_Reset";
             this.Btn_Reset.Size = new System.Drawing.Size(75, 28);
@@ -69,6 +72,7 @@ namespace CursoWindowsForms
             // 
             // Lbl_Minus
             // 
+            this.Lbl_Minus.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Lbl_Minus.AutoSize = true;
             this.Lbl_Minus.Location = new System.Drawing.Point(320, 104);
             this.Lbl_Minus.Name = "Lbl_Minus";
@@ -78,6 +82,7 @@ namespace CursoWindowsForms
             // 
             // Lbl_Maius
             // 
+            this.Lbl_Maius.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Lbl_Maius.AutoSize = true;
             this.Lbl_Maius.Location = new System.Drawing.Point(320, 56);
             this.Lbl_Maius.Name = "Lbl_Maius";
@@ -87,6 +92,7 @@ namespace CursoWindowsForms
             // 
             // Lbl_Upper
             // 
+            this.Lbl_Upper.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Lbl_Upper.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Lbl_Upper.Location = new System.Drawing.Point(368, 56);
             this.Lbl_Upper.Name = "Lbl_Upper";
@@ -95,17 +101,17 @@ namespace CursoWindowsForms
             // 
             // Lbl_Lower
             // 
+            this.Lbl_Lower.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Lbl_Lower.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Lbl_Lower.Location = new System.Drawing.Point(368, 104);
             this.Lbl_Lower.Name = "Lbl_Lower";
             this.Lbl_Lower.Size = new System.Drawing.Size(32, 23);
             this.Lbl_Lower.TabIndex = 6;
             // 
-            // Frm_DemonstracaoKey
+            // Frm_DemonstracaoKey_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 281);
             this.Controls.Add(this.Lbl_Lower);
             this.Controls.Add(this.Lbl_Upper);
             this.Controls.Add(this.Lbl_Maius);
@@ -113,10 +119,8 @@ namespace CursoWindowsForms
             this.Controls.Add(this.Btn_Reset);
             this.Controls.Add(this.Txt_Msg);
             this.Controls.Add(this.Txt_Input);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Frm_DemonstracaoKey";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Demonstração Evento Key";
+            this.Name = "Frm_DemonstracaoKey_UC";
+            this.Size = new System.Drawing.Size(409, 281);
             this.ResumeLayout(false);
             this.PerformLayout();
 
